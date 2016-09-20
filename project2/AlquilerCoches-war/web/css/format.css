@@ -1,0 +1,172 @@
+/* 
+    Created on : 25-mar-2014, 10:34:19
+    Author     : JuanCarlos
+*/
+
+/*GENERAL*/
+body {
+    font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    background:url(../resources/img/style/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+p
+{
+    text-align: justify;
+}/*Como sabemos, por defecto los navegadores nos muestran los enlaces no visitados de color azul y los visitados de color morado. Con estas dos clases modificamos por completo ese aspecto.*/
+a:link, a:visited, a:hover, a:active, a:focus{text-decoration: none}
+
+input[type="radio"]{
+    display: none;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+table td, table th{
+    padding: 10px 10px 10px 10px;
+    border: 1px solid #999;
+}
+
+/*ENCABEZADOS*/
+h1
+{
+    color:#5198c4;
+    text-shadow: 0.1em 0.1em #a6d9ec;
+    font-size:30px;
+    font-weight:bold;
+    font-family:Yahoo;
+    text-transform:uppercase;
+}
+h2{
+    color:#2d5069;
+}
+h3{
+    margin-left:10%;
+    color:#14452d;
+    font-size:25px;
+    font-style:italic;
+    text-transform:capitalize;
+}
+
+/*CONTENEDORES DE LAS PÁGINAS*/
+.bloque{
+    background-color: #B7B7B7;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 10px 45px 30px 20px;
+    border-top: 7px solid #CFCFCF;
+    border-right:7px solid #EDEDED;
+    border-bottom:10px solid #CFCFCF;
+    border-left:10px solid #EDEDED;
+    border-radius: 10px;
+    color:#000;
+
+    text-align: center;
+}
+.footer{
+    margin:0 auto;
+    width: 80%;
+    margin-bottom: 50px;
+}
+.header{
+    display: list-item;
+}
+.header svg{
+    position:fixed;
+    width: 150px;
+}
+
+/*FORMULARIOS*/
+input {
+    font-size:18px;
+    transition: all 0.75s ease-in-out;
+    border-radius:3px;
+    border:1px solid rgba(0,0,0, 0.2);
+    background-color:#FFFFB5;
+    color:gray;
+    padding: 4px;
+}
+input:focus {
+    box-shadow: 0 0 10px #B80016;
+    border:1px solid #B7B7B7;
+    background-color:white;
+}
+input[type='button'], input[type='reset'], input[type='submit'] {
+    border:none;
+    background:url(../resources/img/buttons/boton_up.png) no-repeat center;
+    background-size:100% 100%;
+    font-size:20px;
+    font-style:italic;
+    color:#FFF;
+    font-weight:bold;
+    width:160px;
+    height:40px;
+}
+input[type='button']:hover, input[type='reset']:hover, input[type='submit']:hover {
+    background:url(../resources/img/buttons/boton_over.png) no-repeat center;
+    background-size:100% 100%;
+    color:#000;
+    cursor:pointer;
+}
+
+/* BARRA DE ENLACES DEL HEADER */
+.tabs_bar{
+    float: right;
+    margin-right: 100px;
+}
+.tabs_bar li{
+    float: left;
+    list-style: none;
+    margin-left: 50px;
+    color: brown;
+    font-weight: bold;
+    list-style-position: inside;
+    border: 3px groove;
+    padding: 5px;
+}
+
+/*MISCELANEA*/
+.bloque ul{
+    list-style: none;
+    font-style: italic;
+}
+table th{
+    background-color: #5198c4;
+}
+table tr.reg{
+    background-color: #a6d9ec;
+}
+
+.admin_options li{
+    margin-top: 50px;
+    border: solid;
+}
+
+.validationMessage {
+    font-size: 10px;
+    color: red;
+    display: none;
+}
+
+input[type="radio"]+label {
+    background-color: #86aecc;
+    box-shadow: inset 0px 0px 3px 5px rgba(21,23,23,0.58);
+    border-radius: 4px;
+    padding: 10px 10px 10px 10px;
+    cursor: pointer;
+    text-align: center;
+}
+input[type="radio"]:checked+label {
+    box-shadow: 0px 0px 20px 10px rgba(255,255,255,1);
+    color: #FFC217;
+}
+.regSelected td{
+    background-color: #48507b;
+    color: #fff;
+}
